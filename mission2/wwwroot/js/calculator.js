@@ -1,6 +1,6 @@
 ﻿////calculator function
 
-$("#btnSend").submit(function () {
+$("#btnSend").click(function () {
 
 
     //assigning variables 

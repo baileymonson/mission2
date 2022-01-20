@@ -5,10 +5,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
+//Controllers 
 namespace mission2.controllers
 {
+    
     public class BlahController : Controller
     {
+        //used to return the main view for the index home page
         public IActionResult Index()
         {
             return View();
