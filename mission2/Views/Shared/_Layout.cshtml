@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+@*layout page, this page holds the common elements that will appear on every page*@
+<html>
+<head>
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+    <link rel="icon" href="~/img/Untitled design.png" />
+
+
+    <meta charset="utf-8" />
+    <title>@ViewData["title"]</title>
+</head>
+<body>
+ @*navigation bar*@
+    <div id="nav">
+        <nav id="nav">
+            <a asp-controller="Blah" asp-action="Index" id="a">Home</a>
+            <a asp-controller="Blah" asp-action="Calculator" id="a">Grade Calculator</a>
+        </nav>
+    </div>
+    <div style="text-align: center">
+        @RenderBody()
+        <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="~/js/calculator.js"></script>
+    </div>
+
+
+
+
+</body>
+</html>
+<footer>
+    <br />
+    <hr />
+    <br />
+
+
+</footer>
+

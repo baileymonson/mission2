@@ -1,12 +1,17 @@
-﻿$("#btnSend").click(function () {
+﻿////calculator function
 
+$("#btnSend").submit(function () {
+
+
+    //assigning variables 
     var assignments = ($("#assignments").val() * .55);
     var quizzes = ($("#quizzes").val() * .1);
     var groupprojects = ($("#groupprojects").val() *.05);
     var exams = ($("#exams").val() * .2);
     var intex = ($("#intex").val() * .1);
 
-   
+
+    //calculating your total grade
 
     totalgrade = parseInt(assignments + quizzes + groupprojects + exams + intex).toFixed(2)
 
@@ -14,6 +19,8 @@
 
     totalgrade = parseInt(totalgrade)
 
+
+    //if statement to determine what grade is outputted
     if (parseInt(totalgrade) >= 94) {
         alert("Your letter grade is an A");
     }
@@ -50,9 +57,6 @@
     else {
         alert("Your letter grade is an E");
     }
-
-
-
 
 
 

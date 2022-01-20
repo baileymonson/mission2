@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Calculator";
+}
+@model CalculatorModel;
+
+@*calculator input page*@
+<div>
+    <link href="~/css/default.css" rel="stylesheet" />
+
+    <h3>Grade calculator</h3>
+    <p>Please enter in your overall grade percentage for each section from the syllabus. If you recieved 90/100 for INTEX, simply enter '90'</p>
+
+    @*form for the calculator*@
+    <form method="post">
+        <br />
+        <br />
+        <label>Overall assignments grade: </label>
+        <br />
+        <input id="assignments" asp-for="assignments" /> <br /><br />
+        <label>Overall group project grade:</label>
+        <br />
+        <input id="groupprojects" asp-for="groupprojects" /><br /><br />
+        <label>Overall quizzes grade:</label>
+        <br />
+        <input id="quizzes" asp-for="quizzes" /><br /><br />
+        <label>Overall exams grade:</label>
+        <br />
+        <input id="exams" asp-for="exams" /><br /><br />
+        <label>Overall INTEX grade:</label>
+        <br />
+        <input id="intex" asp-for="intex" /><br /><br />
+        <input id="btnSend" type="submit" value="calculate" />
+
+        <br />
+        <br />
+        <div asp-validation-summary="All"></div>
+
+
+    </form>
+</div>
+
+
+
+
+
